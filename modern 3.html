@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>عيادة سام لطب الأسنان | Sam Dental Clinic</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ind:#3b47b5;--ind2:#5b6ce0;--bg:#eef1fd;--ink:#1a1f3d;--mut:#5d6486;--line:#dde2f7}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Cairo',Tahoma,Arial,sans-serif;color:var(--ink);line-height:1.7;background:var(--bg) radial-gradient(#cdd4f2 1px,transparent 1.3px) 0 0/22px 22px;padding-bottom:96px}
+.app{max-width:640px;margin:auto;padding:0 16px}
+:focus-visible{outline:3px solid var(--ind2);outline-offset:2px}
+button,.btn{font:inherit;cursor:pointer;border:0;border-radius:16px;padding:12px 22px;font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.w{background:#fff;color:var(--ind)}
+.btn.i{background:var(--ind);color:#fff;box-shadow:0 10px 22px rgba(59,71,181,.3)}
+.btn.g{background:#e6f7ee;color:#157a45}
+svg{display:block}
+.ic{fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0 8px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:800;color:var(--ind);font-size:1.1rem}
+.logo i{width:38px;height:38px;border-radius:12px;background:var(--ind);color:#fff;display:grid;place-items:center}
+.lang{background:#fff;color:var(--ind);box-shadow:0 4px 14px rgba(59,71,181,.12);padding:8px 16px;border-radius:999px}
+.hi small{color:var(--mut);display:block;margin-top:18px}
+.hi h1{font-size:1.7rem;font-weight:800;line-height:1.3}
+.hi h1 b{color:var(--ind)}
+.chip{display:inline-flex;gap:8px;align-items:center;background:#fff;border-radius:999px;padding:3px 14px;font-size:.9rem;margin-top:10px;box-shadow:0 4px 14px rgba(59,71,181,.1)}
+.dot{width:9px;height:9px;border-radius:50%;background:#2fbf71}.dot.off{background:#e66}
+.hero{margin-top:18px;border-radius:28px;background:linear-gradient(145deg,var(--ind),var(--ind2));color:#fff;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:10px;overflow:hidden;position:relative;box-shadow:0 20px 40px rgba(59,71,181,.3)}
+.hero h2{font-size:1.45rem;font-weight:800;line-height:1.35}
+.hero p{opacity:.85;margin:6px 0 16px;font-size:.95rem}
+.hero .art{flex:0 0 120px;color:#fff;opacity:.95}
+.sec{margin-top:30px}
+h3{font-size:1.3rem;font-weight:800;margin-bottom:12px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.tile{background:#fff;border-radius:24px;padding:18px 6px 14px;text-align:center;font-weight:600;font-size:.92rem;line-height:1.35;box-shadow:0 8px 22px rgba(59,71,181,.09)}
+.tile i{width:60px;height:60px;border-radius:50%;background:var(--bg);color:var(--ind);display:grid;place-items:center;margin:0 auto 10px}
+.card{background:#fff;border-radius:24px;padding:20px;box-shadow:0 8px 22px rgba(59,71,181,.09)}
+.doc{display:flex;gap:14px;align-items:center}
+.doc i{width:58px;height:58px;border-radius:50%;background:var(--bg);color:var(--ind);display:grid;place-items:center;flex:none}
+.doc small{color:var(--mut);display:block}
+.hrs li{list-style:none;display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px dashed var(--line)}
+.hrs li:last-child{border:0}.cl{color:#d04b4b}
+.btns{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+.map{border-radius:24px;overflow:hidden;box-shadow:0 8px 22px rgba(59,71,181,.12);background:#fff}
+.mapart{display:block;position:relative;height:240px;background:#e3e8fb}
+.mapart svg{width:100%;height:100%;display:block}
+.pin{position:absolute;inset-inline-start:12px;bottom:12px;background:#fff;color:var(--ink);font-weight:700;font-size:.9rem;padding:4px 14px;border-radius:999px;box-shadow:0 4px 14px rgba(59,71,181,.2)}
+.map .bar{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+form{display:grid;gap:14px}
+label{display:grid;gap:4px;font-weight:600}
+input,select{font:inherit;padding:12px 14px;border-radius:14px;border:1.5px solid var(--line);background:#f8f9ff;width:100%;color:var(--ink)}
+input:focus,select:focus{outline:0;border-color:var(--ind2);box-shadow:0 0 0 4px rgba(91,108,224,.18)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:480px){.row{grid-template-columns:1fr}.hero .art{flex-basis:90px}}
+#msg{font-weight:700;color:var(--ind);min-height:1.6em}
+.nav{position:fixed;inset-inline:0;bottom:0;z-index:9;background:#fff;box-shadow:0 -8px 24px rgba(59,71,181,.12);padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px))}
+.nav div{max-width:640px;margin:auto;display:flex;justify-content:space-around}
+.nav a{display:grid;justify-items:center;gap:1px;text-decoration:none;color:var(--mut);font-size:.78rem;font-weight:600;padding:4px 10px}
+.nav a.on{color:var(--ind)}
+footer{text-align:center;color:var(--mut);padding:30px 0 6px;font-size:.9rem}
+footer small{display:block;margin-top:6px;font-size:.82rem}
+footer b{color:var(--ind)}
+[data-en]{display:none}
+html[lang=en] [data-ar]{display:none}
+html[lang=en] [data-en]{display:revert}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="tooth" viewBox="0 0 24 24"><path d="M7 3c-2.5 0-4 2-4 4.5 0 2 .8 3.4 1.4 5.2.7 2.2.6 5.3 1.6 7.3.6 1.2 1.8 1.2 2.3 0 .7-1.6.6-3.7 1.7-3.7s1 2.1 1.7 3.7c.5 1.2 1.7 1.2 2.3 0 1-2 .9-5.1 1.6-7.3.6-1.8 1.4-3.2 1.4-5.2C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></symbol>
+</defs></svg>
+
+<div class="app">
+<header>
+  <button class="lang" id="langBtn" type="button">English</button>
+  <div class="logo"><span><span data-ar>عيادة سام</span><span data-en>Sam Clinic</span></span><i><svg width="22" height="22" class="ic"><use href="#tooth"/></svg></i></div>
+</header>
+
+<div class="hi">
+  <small><span data-ar>أهلاً بك</span><span data-en>Welcome</span></small>
+  <h1><span data-ar>هل تريد حجز موعد <b>لأسنانك؟</b></span><span data-en>Ready to book a <b>dental visit?</b></span></h1>
+  <div class="chip"><span class="dot" id="dot"></span><span id="state"></span></div>
+</div>
+
+<div class="hero">
+  <div>
+    <h2><span data-ar>ابتسامة صحية<br>تبدأ من هنا</span><span data-en>A healthy smile<br>starts here</span></h2>
+    <p><span data-ar>د. سام حاج حمدان، بنش</span><span data-en>Dr. Sam Haj Hamdan, Binnish</span></p>
+    <a class="btn w" href="#book"><span data-ar>احجز الآن</span><span data-en>Book now</span></a>
+  </div>
+  <div class="art"><svg viewBox="0 0 120 130" class="ic" style="stroke-width:2.2">
+    <use href="#tooth" x="12" y="14" width="96" height="96" fill="rgba(255,255,255,.18)"/>
+    <path d="M100 8v14M93 15h14M16 96v10M11 101h10" /></svg></div>
+</div>
+
+<section class="sec" id="services">
+  <h3><span data-ar>خدماتنا</span><span data-en>Our services</span></h3>
+  <div class="grid">
+    <div class="tile"><i><svg width="30" height="30" class="ic" viewBox="0 0 24 24"><use href="#tooth" width="20" height="20"/><circle cx="17.500" cy="17.500" r="3.500" fill="#fff"/><path d="M20 20l2.500 2.500"/></svg></i><span data-ar>فحص واستشارة</span><span data-en>Check-up</span></div>
+    <div class="tile"><i><svg width="30" height="30" class="ic" viewBox="0 0 24 24"><use href="#tooth"/><circle cx="12" cy="10" r="2"/></svg></i><span data-ar>حشوات وعلاج العصب</span><span data-en>Fillings and root canals</span></div>
+    <div class="tile"><i><svg width="30" height="30" class="ic" viewBox="0 0 24 24"><use href="#tooth" width="20" height="20"/><path d="M19 1v5M16.500 3.500h5"/></svg></i><span data-ar>تنظيف وتبييض</span><span data-en>Cleaning and whitening</span></div>
+    <div class="tile"><i><svg width="30" height="30" class="ic" viewBox="0 0 24 24"><use href="#tooth"/><path d="M3 9h18"/><path d="M8 7v4M12 7v4M16 7v4"/></svg></i><span data-ar>تقويم الأسنان</span><span data-en>Braces</span></div>
+    <div class="tile"><i><svg width="30" height="30" class="ic" viewBox="0 0 24 24"><path d="M4 5l4 3 4-5 4 5 4-3-2 10H6z"/><path d="M7 19h10"/></svg></i><span data-ar>تركيبات وتيجان</span><span data-en>Crowns and bridges</span></div>
+    <div class="tile"><i><svg width="30" height="30" class="ic" viewBox="0 0 24 24"><use href="#tooth"/><path d="M12 8v6M9.500 11.500L12 9l2.500 2.500"/></svg></i><span data-ar>قلع الأسنان</span><span data-en>Extractions</span></div>
+  </div>
+</section>
+
+<section class="sec">
+  <h3><span data-ar>الطبيب</span><span data-en>Your doctor</span></h3>
+  <div class="card doc"><i><svg width="30" height="30" class="ic" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.500 3.500-7 8-7s8 2.500 8 7"/></svg></i>
+    <div><b><span data-ar>د. سام حاج حمدان</span><span data-en>Dr. Sam Haj Hamdan</span></b><small><span data-ar>طبيب أسنان، عيادة سام في بنش</span><span data-en>Dentist, Sam Clinic in Binnish</span></small></div></div>
+</section>
+
+<section class="sec">
+  <h3><span data-ar>ساعات الدوام</span><span data-en>Opening hours</span></h3>
+  <div class="card"><ul class="hrs">
+    <li><span data-ar>السبت – الخميس، صباحًا</span><span data-en>Sat – Thu, morning</span><b dir="ltr">7:00 – 16:00</b></li>
+    <li><span data-ar>السبت – الخميس، مساءً</span><span data-en>Sat – Thu, evening</span><b dir="ltr">18:00 – 22:00</b></li>
+    <li class="cl"><span data-ar>الجمعة</span><span data-en>Friday</span><b><span data-ar>مغلق</span><span data-en>Closed</span></b></li>
+  </ul>
+  <div class="btns"><a class="btn i tel" href="#"><span data-ar>اتصل: 0940131428</span><span data-en>Call: 0940131428</span></a>
+  <a class="btn g wa" href="#" target="_blank" rel="noopener"><span data-ar>واتساب</span><span data-en>WhatsApp</span></a></div></div>
+</section>
+
+<section class="sec" id="map">
+  <h3><span data-ar>الموقع: بنش، الطريق العام</span><span data-en>Binnish, Main Road</span></h3>
+  <div class="map"><a class="mapart" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=35.9579387,36.7122377" aria-label="map">
+    <svg viewBox="0 0 400 240" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <rect width="400" height="240" fill="#e3e8fb"/>
+      <g fill="#d3dbf7"><rect x="10" y="12" width="110" height="70" rx="12"/><rect x="140" y="12" width="90" height="70" rx="12"/><rect x="250" y="12" width="140" height="70" rx="12"/><rect x="10" y="150" width="90" height="78" rx="12"/><rect x="120" y="150" width="130" height="78" rx="12"/><rect x="270" y="150" width="120" height="78" rx="12"/></g>
+      <g stroke="#fff" stroke-linecap="round" fill="none"><path d="M-10 118 L410 106" stroke-width="22"/><path d="M130 -10 L142 250" stroke-width="12"/><path d="M262 -10 L252 250" stroke-width="12"/></g>
+      <path d="M-10 118 L410 106" stroke="#c4cdf0" stroke-width="2" stroke-dasharray="10 10" fill="none"/>
+      <circle cx="200" cy="112" r="30" fill="#3b47b5" opacity=".15"/>
+      <path d="M200 134c-14-16-22-26-22-38a22 22 0 0 1 44 0c0 12-8 22-22 38z" fill="#3b47b5"/>
+      <circle cx="200" cy="96" r="8" fill="#fff"/>
+    </svg>
+    <span class="pin"><span data-ar>بنش، الطريق العام</span><span data-en>Binnish, Main Road</span></span>
+  </a>
+  <div class="bar"><span></span><a class="btn i" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=35.9579387,36.7122377"><span data-ar>الاتجاهات</span><span data-en>Directions</span></a></div></div>
+</section>
+
+<section class="sec" id="book">
+  <h3><span data-ar>احجز موعدك</span><span data-en>Book your appointment</span></h3>
+  <div class="card"><form id="f">
+    <div class="row">
+      <label><span data-ar>الاسم</span><span data-en>Name</span><input name="name" required></label>
+      <label><span data-ar>رقم الهاتف</span><span data-en>Phone</span><input name="phone" type="tel" dir="ltr" required></label>
+    </div>
+    <div class="row">
+      <label><span data-ar>التاريخ</span><span data-en>Date</span><input name="date" id="date" type="date" required></label>
+      <label><span data-ar>الوقت</span><span data-en>Time</span><select name="time" id="time" required></select></label>
+    </div>
+    <label><span data-ar>الخدمة</span><span data-en>Service</span><select name="service" id="service"></select></label>
+    <button class="btn i" type="submit" style="justify-content:center"><span data-ar>أرسل الحجز</span><span data-en>Send booking</span></button>
+    <div id="msg" role="status"></div>
+  </form></div>
+</section>
+<footer>© <span id="yr"></span> <span data-ar>عيادة سام لطب الأسنان – د. سام حاج حمدان</span><span data-en>Sam Dental Clinic – Dr. Sam Haj Hamdan</span><br>
+<small><span data-ar>تصميم وبرمجة: <b>فايتك للبرمجة</b> – موسى سلات</span><span data-en>Designed and developed by <b>PHITEK Programming</b> – Mousa Sallat</span></small></footer>
+</div>
+
+<nav class="nav"><div>
+  <a class="on" href="#"><svg width="24" height="24" class="ic" viewBox="0 0 24 24"><path d="M3 11l9-8 9 8v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg><span data-ar>الرئيسية</span><span data-en>Home</span></a>
+  <a href="#services"><svg width="24" height="24" class="ic" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/></svg><span data-ar>الخدمات</span><span data-en>Services</span></a>
+  <a href="#book"><svg width="24" height="24" class="ic" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg><span data-ar>احجز</span><span data-en>Book</span></a>
+  <a class="tel" href="#"><svg width="24" height="24" class="ic" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span data-ar>اتصل</span><span data-en>Call</span></a>
+</div></nav>
+
+<script>
+// ===== إعدادات / Settings =====
+var PHONE="963940131428";
+var SCRIPT_URL="";   // رابط Google Apps Script (اختياري)
+// ==============================
+var S={ar:["فحص واستشارة","حشوات وعلاج العصب","تنظيف وتبييض","تقويم الأسنان","تركيبات وتيجان","قلع الأسنان"],
+       en:["Check-up and consultation","Fillings and root canals","Cleaning and whitening","Braces","Crowns and bridges","Extractions"]};
+var T={ar:{sent:"تم إرسال طلبك. سنتصل بك لتأكيد الموعد.",fri:"العيادة مغلقة يوم الجمعة، اختر يومًا آخر.",err:"تعذّر الإرسال، حاول مرة أخرى أو اتصل بنا.",on:"مفتوح الآن",off:"مغلق الآن"},
+       en:{sent:"Your request was sent. We will call you to confirm.",fri:"The clinic is closed on Fridays. Please choose another day.",err:"Could not send. Please try again or call us.",on:"Open now",off:"Closed now"}};
+var lang="ar",$=function(i){return document.getElementById(i)};
+function fill(){
+  var sv=$("service"),tm=$("time");sv.innerHTML="";tm.innerHTML="";
+  S[lang].forEach(function(s,i){var o=document.createElement("option");o.value=S.en[i];o.textContent=s;sv.appendChild(o)});
+  [7,8,9,10,11,12,13,14,15,18,19,20,21].forEach(function(h){var o=document.createElement("option");o.value=o.textContent=(h<10?"0":"")+h+":00";tm.appendChild(o)});
+}
+function status(){
+  var n=new Date(),h=n.getHours()+n.getMinutes()/60,open=n.getDay()!==5&&((h>=7&&h<16)||(h>=18&&h<22));
+  $("dot").className="dot"+(open?"":" off");$("state").textContent=T[lang][open?"on":"off"];
+}
+function setLang(l){
+  lang=l;document.documentElement.lang=l;document.documentElement.dir=l==="ar"?"rtl":"ltr";
+  $("langBtn").textContent=l==="ar"?"English":"العربية";fill();status();
+}
+$("langBtn").onclick=function(){setLang(lang==="ar"?"en":"ar")};
+document.querySelectorAll(".tel").forEach(function(a){a.href="tel:+"+PHONE});
+document.querySelectorAll(".wa").forEach(function(a){a.href="https://wa.me/"+PHONE});
+$("yr").textContent=new Date().getFullYear();
+var d=new Date();$("date").min=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);
+fill();status();
+$("f").onsubmit=function(e){
+  e.preventDefault();
+  var f=e.target,data={name:f.name.value,phone:f.phone.value,date:f.date.value,time:f.time.value,service:f.service.value},msg=$("msg");
+  if(new Date(data.date+"T12:00:00").getDay()===5){msg.textContent=T[lang].fri;return}
+  if(SCRIPT_URL){
+    fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",body:JSON.stringify(data)})
+      .then(function(){msg.textContent=T[lang].sent;f.reset()})
+      .catch(function(){msg.textContent=T[lang].err});
+  }else{
+    var t="حجز جديد / New booking\nالاسم: "+data.name+"\nالهاتف: "+data.phone+"\nالتاريخ: "+data.date+"\nالوقت: "+data.time+"\nالخدمة: "+data.service;
+    window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(t),"_blank");
+    msg.textContent=T[lang].sent;
+  }
+};
+</script>
+</body>
+</html>
