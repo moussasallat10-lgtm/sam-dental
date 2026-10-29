@@ -2,158 +2,66 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>عيادة سام لطب الأسنان | Sam Dental Clinic</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مراكز العثمان والنصر للزيوت</title>
 <style>
-:root{--bg:#f7fbfa;--card:#fff;--ink:#14282b;--mut:#51676a;--pri:#0f5e63;--pri-ink:#fff;--soft:#e3f1ef;--acc:#f2b544;--line:#d3e3e0}
-@media (prefers-color-scheme:dark){:root{--bg:#0d1a1c;--card:#132427;--ink:#e8f2f1;--mut:#9db5b7;--pri:#3fb5ad;--pri-ink:#062022;--soft:#17302f;--line:#25403f}}
-*{box-sizing:border-box;margin:0}
-body{font-family:'Cairo',Tahoma,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.7}
-.wrap{max-width:960px;margin:auto;padding:0 18px}
-header{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
-.logo{font-weight:800;font-size:1.2rem;color:var(--pri)}
-button,.btn{font:inherit;cursor:pointer;border-radius:10px;border:0;padding:10px 18px;font-weight:600;text-decoration:none;display:inline-block}
-.lang{background:var(--soft);color:var(--ink)}
-.btn{background:var(--pri);color:var(--pri-ink)}
-.btn.alt{background:var(--acc);color:#2a1d00}
-:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
-.hero{padding:46px 0 38px}
-.hero h1{font-size:clamp(2rem,7vw,3.4rem);font-weight:800;line-height:1.25;color:var(--pri);max-width:14em}
-.hero p{margin:14px 0 24px;color:var(--mut);max-width:34em;font-size:1.1rem}
-.hero .doc{font-weight:600;color:var(--ink);margin:0 0 16px}
-.hero .btn{margin-inline-end:8px;margin-bottom:8px}
-section{padding:30px 0}
-h2{font-size:1.5rem;margin-bottom:14px}
-.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
-.box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
-.box b{display:block;color:var(--pri)}
-.hours{background:var(--soft);border-radius:16px;padding:20px}
-.hours li{list-style:none;display:flex;justify-content:space-between;gap:12px;padding:6px 0;border-bottom:1px dashed var(--line)}
-.hours li:last-child{border:0}
-.closed{color:var(--mut)}
-form{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:grid;gap:14px}
-label{display:grid;gap:4px;font-weight:600}
-input,select{font:inherit;padding:11px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink);width:100%}
-.row{display:grid;gap:14px;grid-template-columns:1fr 1fr}
-@media(max-width:520px){.row{grid-template-columns:1fr}}
-#msg{font-weight:600;color:var(--pri);min-height:1.5em}
-footer{padding:26px 0 40px;color:var(--mut);text-align:center}
-[data-en]{display:none}
-html[lang=en] [data-ar]{display:none}
-html[lang=en] [data-en]{display:revert}
+:root{--bg:#fafaf7;--card:#fff;--tx:#1d2330;--mut:#6b7280;--ac:#c8102e;--ac2:#f5b800;--bd:#e7e5df;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14161b;--card:#1d2027;--tx:#f1f1ee;--mut:#9aa0ab;--bd:#2c3039}}
+:root[data-theme="dark"]{--bg:#14161b;--card:#1d2027;--tx:#f1f1ee;--mut:#9aa0ab;--bd:#2c3039}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font-family:Tahoma,"Segoe UI",Arial,sans-serif;line-height:1.6}
+.w{max-width:960px;margin:auto;padding:16px}
+header{text-align:center;padding:28px 12px 8px}
+.logo{width:64px;height:64px;border-radius:50%;background:var(--ac);color:#fff;display:inline-grid;place-items:center;font-size:30px}
+h1{margin:10px 0 4px;font-size:24px}header p{margin:0;color:var(--mut)}
+h2{font-size:17px;margin:26px 0 10px}h2 span{background:var(--ac);color:#fff;border-radius:50%;width:24px;height:24px;display:inline-grid;place-items:center;font-size:13px;margin-left:6px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:1px solid var(--bd);background:var(--card);color:var(--tx);padding:9px 16px;border-radius:99px;font:inherit;cursor:pointer}
+.chip.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px}
+.card h3{margin:0 0 4px;font-size:16px}.card small{color:var(--mut)}
+.btns{display:flex;gap:8px;margin-top:10px}
+.btn{flex:1;text-align:center;padding:8px;border-radius:10px;background:var(--ac);color:#fff;text-decoration:none;font-size:14px}
+.btn.o{background:none;color:var(--tx);border:1px solid var(--bd)}
+.mgmt{background:var(--card);border:1px dashed var(--ac);border-radius:14px;padding:12px;margin-top:12px;display:flex;justify-content:space-between;align-items:center}
+.img{height:110px;border-radius:10px;background:linear-gradient(135deg,#fdf3d0,#fbe3e6);display:grid;place-items:center;font-size:48px;margin-bottom:10px}
+.tag{display:inline-block;font-size:12px;background:var(--bg);border:1px solid var(--bd);border-radius:6px;padding:1px 8px;margin-left:4px}
+.price{color:var(--ac);font-weight:700;font-size:18px}
+.hide{display:none}.note{color:var(--mut);text-align:center;font-size:13px;margin:30px 0 10px}
 </style>
 </head>
 <body>
-<div class="wrap">
-<header>
-  <div class="logo"><span data-ar>عيادة سام لطب الأسنان</span><span data-en>Sam Dental Clinic</span></div>
-  <button class="lang" id="langBtn" type="button">English</button>
-</header>
+<div class="w">
+<header><div class="logo">🛢️</div><h1>مراكز العثمان والنصر للزيوت</h1><p>زيوت السيارات الأصلية — اختر فرعك الأقرب إليك</p></header>
 
-<div class="hero">
-  <h1><span data-ar>ابتسامة صحية تبدأ من هنا</span><span data-en>A healthy smile starts here</span></h1>
-  <p><span data-ar>احجز موعدك في عيادة سام لطب الأسنان في بنش، ونؤكد لك الموعد بالاتصال.</span><span data-en>Book your visit at Sam Dental Clinic in Binnish. We will call you to confirm.</span></p>
-  <p class="doc"><span data-ar>الطبيب: د. سام حاج حمدان</span><span data-en>Doctor: Dr. Sam Haj Hamdan</span></p>
-  <a class="btn" href="#book"><span data-ar>احجز موعدًا</span><span data-en>Book an appointment</span></a>
-  <a class="btn alt" id="callBtn" href="tel:+963940131428"><span data-ar>اتصل بنا</span><span data-en>Call us</span></a>
+<h2><span>1</span>اختر المحافظة</h2>
+<div class="chips" id="gov"></div>
+
+<div id="s2" class="hide">
+<h2><span>2</span>اختر المركز الأقرب</h2>
+<div class="grid" id="br"></div>
+<div class="mgmt"><div><b>الإدارة العامة</b><br><small>للشكاوى والطلبات الخاصة</small></div><a class="btn" style="flex:none;padding:8px 18px" href="tel:+963000000000">اتصال</a></div>
 </div>
 
-<section>
-  <h2><span data-ar>خدماتنا</span><span data-en>Our services</span></h2>
-  <div class="grid">
-    <div class="box"><b><span data-ar>فحص واستشارة</span><span data-en>Check-up and consultation</span></b></div>
-    <div class="box"><b><span data-ar>حشوات وعلاج العصب</span><span data-en>Fillings and root canals</span></b></div>
-    <div class="box"><b><span data-ar>تنظيف وتبييض</span><span data-en>Cleaning and whitening</span></b></div>
-    <div class="box"><b><span data-ar>تقويم الأسنان</span><span data-en>Braces</span></b></div>
-    <div class="box"><b><span data-ar>تركيبات وتيجان</span><span data-en>Crowns and bridges</span></b></div>
-    <div class="box"><b><span data-ar>قلع الأسنان</span><span data-en>Extractions</span></b></div>
-  </div>
-</section>
-
-<section>
-  <h2><span data-ar>ساعات الدوام</span><span data-en>Opening hours</span></h2>
-  <div class="hours">
-    <ul>
-      <li><span data-ar>السبت إلى الخميس</span><span data-en>Saturday to Thursday</span><span dir="ltr">7:00 – 16:00</span></li>
-      <li><span data-ar>السبت إلى الخميس (مساءً)</span><span data-en>Saturday to Thursday (evening)</span><span dir="ltr">18:00 – 22:00</span></li>
-      <li class="closed"><span data-ar>الجمعة</span><span data-en>Friday</span><span data-ar>مغلق</span><span data-en>Closed</span></li>
-    </ul>
-  </div>
-</section>
-
-<section>
-  <h2><span data-ar>الموقع</span><span data-en>Location</span></h2>
-  <div class="box">
-    <p><span data-ar>بنش، الطريق العام</span><span data-en>Binnish, Main Road</span></p>
-    <p dir="ltr"><a href="tel:+963940131428">0940131428</a></p>
-    <iframe title="map" loading="lazy" style="border:0;width:100%;height:280px;border-radius:12px;margin:10px 0" src="https://maps.google.com/maps?q=35.9579387,36.7122377&z=16&output=embed"></iframe>
-    <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=35.9579387,36.7122377"><span data-ar>الاتجاهات على الخريطة</span><span data-en>Get directions</span></a>
-  </div>
-</section>
-
-<section id="book">
-  <h2><span data-ar>احجز موعدك</span><span data-en>Book your appointment</span></h2>
-  <form id="f">
-    <div class="row">
-      <label><span data-ar>الاسم</span><span data-en>Name</span><input name="name" required></label>
-      <label><span data-ar>رقم الهاتف</span><span data-en>Phone</span><input name="phone" type="tel" dir="ltr" required></label>
-    </div>
-    <div class="row">
-      <label><span data-ar>التاريخ</span><span data-en>Date</span><input name="date" id="date" type="date" required></label>
-      <label><span data-ar>الوقت</span><span data-en>Time</span><select name="time" id="time" required></select></label>
-    </div>
-    <label><span data-ar>الخدمة</span><span data-en>Service</span>
-      <select name="service" id="service"></select></label>
-    <button class="btn" type="submit"><span data-ar>أرسل الحجز</span><span data-en>Send booking</span></button>
-    <div id="msg" role="status"></div>
-  </form>
-</section>
+<div id="s3" class="hide">
+<h2><span>3</span>المنتجات</h2>
+<small style="color:var(--mut)">بلد صنع السيارة</small>
+<div class="chips" id="f1" style="margin:6px 0 10px"></div>
+<small style="color:var(--mut)">نوع الوقود</small>
+<div class="chips" id="f2" style="margin:6px 0 14px"></div>
+<div class="grid" id="pr"></div>
 </div>
-<footer>© <span id="yr"></span> <span data-ar>عيادة سام لطب الأسنان</span><span data-en>Sam Dental Clinic</span> – <span data-ar>د. سام حاج حمدان</span><span data-en>Dr. Sam Haj Hamdan</span></footer>
 
+<p class="note">نموذج تصميم أولي — الأسماء والأسعار والأرقام تجريبية</p>
+</div>
 <script>
-// ===== إعدادات / Settings: عدّلها هنا =====
-var PHONE = "963940131428";   // رقم العيادة بصيغة دولية بدون + / clinic number, international, no +
-var SCRIPT_URL = "";          // رابط Google Apps Script (اختياري) / optional
-// ==========================================
-var S = {ar:["فحص واستشارة","حشوات وعلاج العصب","تنظيف وتبييض","تقويم الأسنان","تركيبات وتيجان","قلع الأسنان"],
-         en:["Check-up and consultation","Fillings and root canals","Cleaning and whitening","Braces","Crowns and bridges","Extractions"]};
-var T = {ar:{sent:"تم إرسال طلبك. سنتصل بك لتأكيد الموعد.",fri:"العيادة مغلقة يوم الجمعة، اختر يومًا آخر.",err:"تعذّر الإرسال، حاول مرة أخرى أو اتصل بنا."},
-         en:{sent:"Your request was sent. We will call you to confirm.",fri:"The clinic is closed on Fridays. Please choose another day.",err:"Could not send. Please try again or call us."}};
-var lang = "ar";
-var $ = function(id){return document.getElementById(id)};
-function fill(){
-  var sv=$("service"), tm=$("time");
-  sv.innerHTML=""; S[lang].forEach(function(s,i){var o=document.createElement("option");o.value=S.en[i];o.textContent=s;sv.appendChild(o)});
-  tm.innerHTML="";
-  [7,8,9,10,11,12,13,14,15,18,19,20,21].forEach(function(h){var o=document.createElement("option");var v=(h<10?"0":"")+h+":00";o.value=v;o.textContent=v;tm.appendChild(o)});
-}
-function setLang(l){
-  lang=l; document.documentElement.lang=l; document.documentElement.dir=(l==="ar"?"rtl":"ltr");
-  $("langBtn").textContent=(l==="ar"?"English":"العربية"); fill();
-}
-$("langBtn").onclick=function(){setLang(lang==="ar"?"en":"ar")};
-$("callBtn").href="tel:+"+PHONE;
-$("yr").textContent=new Date().getFullYear();
-var d=new Date(); $("date").min=d.getFullYear()+"-"+("0"+(d.getMonth()+1)).slice(-2)+"-"+("0"+d.getDate()).slice(-2);
-fill();
-$("f").onsubmit=function(e){
-  e.preventDefault();
-  var f=e.target, data={name:f.name.value,phone:f.phone.value,date:f.date.value,time:f.time.value,service:f.service.value};
-  var msg=$("msg");
-  if(new Date(data.date+"T12:00:00").getDay()===5){msg.textContent=T[lang].fri;return}
-  if(SCRIPT_URL){
-    fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",body:JSON.stringify(data)})
-      .then(function(){msg.textContent=T[lang].sent;f.reset()})
-      .catch(function(){msg.textContent=T[lang].err});
-  } else {
-    var text="حجز جديد / New booking\nالاسم: "+data.name+"\nالهاتف: "+data.phone+"\nالتاريخ: "+data.date+"\nالوقت: "+data.time+"\nالخدمة: "+data.service;
-    window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(text),"_blank");
-    msg.textContent=T[lang].sent;
-  }
-};
+var D={"اللاذقية":[["مركز اللاذقية","وسط المدينة"]],"إدلب":[["مركز سرمدا","سرمدا"],["مركز معرة مصرين","معرة مصرين"]],"حماة":[["مركز حماة","وسط المدينة"]],"دمشق":[["مركز دمشق","دمشق"]],"حلب":[["مركز حلب","حلب"]]};
+var P=[["زيت 5W-30 صناعي","كورية","بنزين","كيا / هيونداي","🛢️",18],["زيت 10W-40 نصف صناعي","كورية","بنزين","كيا / هيونداي","🛢️",14],["زيت ديزل 15W-40","كورية","ديزل","كيا / هيونداي","🛢️",16],["زيت 0W-20 هايبرد","يابانية","بنزين","تويوتا / هوندا","🛢️",22],["زيت 5W-30 يابانية","يابانية","بنزين","نيسان / مازدا","🛢️",19],["زيت ديزل 5W-40","يابانية","ديزل","تويوتا / ميتسوبيشي","🛢️",21],["زيت 5W-40 لونغ لايف","ألمانية","بنزين","مرسيدس / BMW","🛢️",30],["زيت ديزل 5W-30 DPF","ألمانية","ديزل","فولكس / أودي","🛢️",32]];
+var g=0,o="الكل",f="الكل";
+function chips(id,arr,cur,fn){var e=document.getElementById(id);e.innerHTML="";arr.forEach(function(t){var b=document.createElement("button");b.className="chip"+(t===cur?" on":"");b.textContent=t;b.onclick=function(){fn(t)};e.appendChild(b)})}
+function pg(k){g=k;chips("gov",Object.keys(D),g,pg);var h="";D[k].forEach(function(b,i){h+='<div class="card"><h3>'+b[0]+'</h3><small>📍 '+b[1]+', '+k+'</small><div class="btns"><a class="btn" href="tel:+96300000000'+i+'">اتصال</a><a class="btn o" href="https://maps.google.com/?q='+encodeURIComponent(b[0]+" "+k)+'" target="_blank">الموقع</a></div></div>'});document.getElementById("br").innerHTML=h;s2.classList.remove("hide");s3.classList.remove("hide");rp()}
+function rp(){chips("f1",["الكل","كورية","يابانية","ألمانية"],o,function(t){o=t;rp()});chips("f2",["الكل","بنزين","ديزل"],f,function(t){f=t;rp()});var h="";P.forEach(function(p){if((o=="الكل"||p[1]==o)&&(f=="الكل"||p[2]==f))h+='<div class="card"><div class="img">'+p[4]+'</div><h3>'+p[0]+'</h3><span class="tag">'+p[1]+'</span><span class="tag">'+p[2]+'</span><br><small>'+p[3]+'</small><div class="price">$'+p[5]+'</div></div>'});document.getElementById("pr").innerHTML=h||'<p style="color:var(--mut)">لا توجد منتجات</p>'}
+chips("gov",Object.keys(D),-1,pg);
 </script>
 </body>
 </html>
